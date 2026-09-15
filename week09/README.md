@@ -10,6 +10,6 @@
 
 本週無隨堂作業，以期中考代替
 
-## 期中考
+## 註解：期中考
 
 見 [midterm/README.md](../midterm/README.md)。

@@ -10,6 +10,6 @@
 
 本週無隨堂作業，以期末考代替
 
-## 期末考
+## 註解：期末考
 
 見 [final/README.md](../final/README.md)。
