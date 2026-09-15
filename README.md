@@ -43,3 +43,49 @@
 5. 第 8 週小考後統計出席與作業繳交：未交作業達 3 次或無故缺席達 3 次，列入期中預警並通知家長。
 6. 餐點分享週（第 10、17 週）課程照常進行；第 10 週如遇校內活動則順延一週，以課堂公告為準。
 7. 教科書投影片為出版社授權教材，只供本課程學習，請勿上傳到公開網站。
+
+## GitHub 基本操作（新手看這裡）
+
+> 本課程作業以 Canva 答題卡繳交，**不需要用 GitHub 交作業**。以下 Git 基本操作供你檢視本課程 repo、做期末報告的版本管理，以及其他課程（如資料庫系統及設計）使用。
+
+### 一、第一次設定（只做一次）
+
+1. 到 <https://github.com> 註冊 GitHub 帳號。
+2. 安裝 Git：<https://git-scm.com/download/win>（Windows）。
+3. 打開命令提示字元或 VS Code 終端機，設定你的名字與 Email（要跟 GitHub 帳號一致）：
+
+```bash
+git config --global user.name "你的名字"
+git config --global user.email "你的GitHub註冊Email"
+```
+
+### 二、取得課程 / 專案 repo（複製到自己電腦）
+
+```bash
+git clone https://github.com/帳號/repo名稱.git
+cd repo名稱
+```
+
+### 三、交作業或存檔的三步驟：add → commit → push
+
+```bash
+git add .                      # 把這次的變更加入暫存區（. 代表全部檔案）
+git commit -m "完成第3週作業"   # 把暫存區的變更存成一個版本，-m 後面寫這次做了什麼
+git push                       # 把本機的版本上傳到 GitHub
+```
+
+> 口訣：**add 收東西 → commit 存檔（要寫說明）→ push 上傳**。三步驟每次都一樣。
+
+### 四、常用查看指令
+
+| 指令 | 作用 |
+|------|------|
+| `git status` | 看目前有哪些檔案改了、加了、還沒 commit（最常用，動手前先打這個） |
+| `git log --oneline -5` | 看最近 5 個版本；`HEAD -> main` 那一行就是你**現在所在的位置** |
+| `git rev-parse --short HEAD` | 只印出目前 HEAD 的版本代號（7 碼） |
+| `git branch` | 看目前在哪個分支（前面有 `*` 的就是目前所在） |
+| `git diff` | 看改了哪些內容（還沒 add 的部分） |
+| `git pull` | 把 GitHub 上別人（或老師）的最新版本拉下來 |
+
+> **HEAD 是什麼**：HEAD 就是「你現在站在哪一個版本上」的指標。打 `git status` 會看到 `On branch main`（在哪個分支），打 `git log --oneline -5` 會看到 `(HEAD -> main)` 標在最新版本上——那就是 HEAD 現在的位置。
+
