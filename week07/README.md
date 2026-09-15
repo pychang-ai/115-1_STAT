@@ -14,4 +14,4 @@
 
 ## 註解：期末報告撰寫說明（1/2）
 
-小考見 [quizzes/README.md](../quizzes/README.md)；期末報告格式見 [final/README.md](../final/README.md)。
+期末報告格式見 [final/README.md](../final/README.md)（國科會大專生研究計畫格式）。
