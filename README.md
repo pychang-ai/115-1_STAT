@@ -248,11 +248,18 @@
 
 1. 到 <https://github.com> 註冊 GitHub 帳號。
 2. 安裝 Git：<https://git-scm.com/download/win>（Windows）。
-3. 打開命令提示字元或 VS Code 終端機，設定你的名字與 Email（要跟 GitHub 帳號一致）：
+3. **設定識別資料**：安裝 Git 後首先應該做的事，是設定使用者名稱及電子郵件。每次 commit 都會記下這兩項，所以要跟 GitHub 帳號一致。打開命令提示字元或 VS Code 終端機輸入：
 
 ```bash
 git config --global user.name "你的名字"
 git config --global user.email "你的GitHub註冊Email"
+```
+
+例如名字是 John Doe、Email 是 johndoe@example.com：
+
+```bash
+git config --global user.name "John Doe"
+git config --global user.email johndoe@example.com
 ```
 
 ### 二、取得課程 / 專案 repo（複製到自己電腦）
